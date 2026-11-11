@@ -1,0 +1,126 @@
+body {
+    margin: 0;
+    padding: 25px;
+    background-color: #F8EFF1;
+    font-family: Tahoma, sans-serif;
+    direction: rtl;
+}
+
+.pencil-page {
+    max-width: 1100px;
+    margin: auto;
+    text-align: center;
+}
+
+.pencil-page h2 {
+    color: #A82F53;
+    font-size: 28px;
+}
+
+.description {
+    color: #76514F;
+    font-size: 16px;
+}
+
+.pencil-page h3 {
+    color: #A82F53;
+    margin: 25px 0;
+}
+
+.pencil-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.pencil-card {
+    position: relative;
+    background-color: #FFF9F7;
+    padding: 15px;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(174,79,112,0.12);
+    transition: 0.3s;
+}
+
+.pencil-card:hover {
+    transform: translateY(-7px);
+    box-shadow: 0 7px 18px rgba(174,79,112,0.22);
+}
+
+.pencil-card img {
+    width: 150px;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.pencil-card h4 {
+    color: #A82F53;
+    font-size: 16px;
+}
+
+.pencil-card p {
+    color: #76514F;
+    font-size: 13px;
+}
+
+.pencil-card .price {
+    color: #A82F53;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.pencil-card select {
+    width: 90%;
+    padding: 9px;
+    border: 1px solid #E9C5D1;
+    border-radius: 8px;
+    background-color: white;
+    color: #76514F;
+    cursor: pointer;
+}
+
+.pencil-banner {
+    background-color: #F3DDE5;
+    padding: 20px;
+    margin-top: 35px;
+    border-radius: 15px;
+}
+
+.pencil-banner h3 {
+    color: #A82F53;
+}
+
+.pencil-banner p {
+    color: #76514F;
+}
+
+.back-home {
+    display: inline-block;
+    margin-top: 25px;
+    padding: 12px 25px;
+    background-color: #A82F53;
+    color: white;
+    text-decoration: none;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.back-home:hover {
+    background-color: #76203B;
+}
+
+/* نمایش در موبایل */
+
+@media (max-width: 768px) {
+    .pencil-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .pencil-grid {
+        grid-template-columns: 1fr;
+    }
+}
